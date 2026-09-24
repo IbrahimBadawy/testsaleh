@@ -51,7 +51,7 @@ function navigate(page) {
   const changed = ui.page !== page;
   ui.page = page;
   persistUi();
-  if (location.hash.slice(1) !== page) history.replaceState(null, '', '#' + page);
+  try { if (location.hash.slice(1) !== page) history.replaceState(null, '', '#' + page); } catch (e) { /* بيئة معزولة */ }
   App.refresh();
   const view = document.getElementById('view');
   if (changed) {
