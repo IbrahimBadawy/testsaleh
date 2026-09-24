@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>جدولي الذكي — منظّم الجداول المدرسية</title>
+  <meta name="description" content="نظام ذكي لبناء الجداول المدرسية للمدارس الابتدائية: توزيع تلقائي، كشف التعارضات، وسحب وإفلات.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%236d5dfc'/%3E%3Cstop offset='1' stop-color='%23d946ef'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23g)'/%3E%3Cg fill='%23fff'%3E%3Crect x='14' y='16' width='16' height='12' rx='3'/%3E%3Crect x='34' y='16' width='16' height='12' rx='3' opacity='.6'/%3E%3Crect x='14' y='32' width='16' height='12' rx='3' opacity='.6'/%3E%3Crect x='34' y='32' width='16' height='12' rx='3'/%3E%3C/g%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="bg-fx" aria-hidden="true"><span></span><span></span><span></span></div>
+
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="logo"><i></i><i></i><i></i><i></i></div>
+        <div class="brand-text"><b>جدولي الذكي</b><span>منظّم الجداول المدرسية</span></div>
+      </div>
+      <nav id="nav" class="nav"></nav>
+      <div id="sideFoot" class="side-foot"></div>
+    </aside>
+
+    <main class="main">
+      <header id="topbar" class="topbar"></header>
+      <section id="view" class="view"></section>
+    </main>
+  </div>
+
+  <div id="drawer" class="drawer"></div>
+  <div id="modalRoot"></div>
+  <div id="toasts" class="toasts"></div>
+  <div id="tip" class="tip"></div>
+  <div id="dragTip" class="drag-tip"></div>
+  <div id="overlay" class="overlay"></div>
+  <canvas id="confetti" class="confetti"></canvas>
+  <div id="printArea" class="print-area"></div>
+
+  <script src="js/engine.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/pages.js"></script>
+  <script src="js/timetable.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
